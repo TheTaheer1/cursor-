@@ -1,0 +1,27 @@
+name: evoai-lab
+version: "1.0.0"
+description: >
+  A self-improving AI training environment that trains LLMs to be calibrated -
+  confident when correct, uncertain when wrong. Uses a 6-agent loop with adversarial
+  question generation, disagreement filtering, ground-truth verification, and
+  GRPO fine-tuning. Zone C (high confidence + wrong) is the primary training target.
+theme: self-improvement
+entry_point: backend.env.evoai_env:EvoAIEnv
+author: EvoAI Lab Team
+license: MIT
+tags:
+  - calibration
+  - self-improvement
+  - GRPO
+  - multi-agent
+  - llm-training
+  - zone-c
+requires:
+  - openenv>=0.1.0
+  - groq
+  - sentence-transformers
+  - faiss-cpu
+  - httpx
+  - torch
+  - transformers
+  - trl
